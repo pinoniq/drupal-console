@@ -31,7 +31,7 @@
         "symfony/dom-crawler": "~3.0|~4.0",
         "symfony/http-foundation": "~3.0|~4.0",
         "dflydev/dot-access-configuration": "^1.0",
-        "drupal/console-en": "1.9.7",
+        "pinoniq/drupal-console-en": "~2.0",
         "stecman/symfony-console-completion": "~0.7",
         "symfony/config": "~3.0|^4.4",
         "symfony/console": "~3.0|^4.4",
