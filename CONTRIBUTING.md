@@ -39,7 +39,7 @@ Include steps related how to reproduce.
 
 **Details to include:**
 - Drupal version (you can obtain this by running `drupal site:status`).
-- Console version (you can obtain this by running `composer show | grep drupal/console`).
+- Console version (you can obtain this by running `composer show | grep pinoniq/drupal-console`).
 - Console Launcher version (you can obtain this by running outside of a drupal site `drupal --version`).
 - Steps to reproduce
 - Include screen-shot or video whenever necessary.
