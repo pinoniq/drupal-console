@@ -15,6 +15,8 @@
 Drupal Console based on the work of https://github.com/hechoendrupal/drupal-console
 =============================================
 
+[![Latest Stable Version](https://poser.pugx.org/pinoniq/drupal-console/v)](//packagist.org/packages/pinoniq/drupal-console) [![Total Downloads](https://poser.pugx.org/pinoniq/drupal-console/downloads)](//packagist.org/packages/pinoniq/drupal-console) [![Latest Unstable Version](https://poser.pugx.org/pinoniq/drupal-console/v/unstable)](//packagist.org/packages/pinoniq/drupal-console) [![License](https://poser.pugx.org/pinoniq/drupal-console/license)](//packagist.org/packages/pinoniq/drupal-console)
+
 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
 
 ## Latest Version
