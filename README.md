@@ -12,15 +12,8 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-Drupal Console
+Drupal Console based on the work of https://github.com/hechoendrupal/drupal-console
 =============================================
-
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/hechoendrupal/DrupalConsole)
-[![Build Status](https://travis-ci.org/hechoendrupal/drupal-console.svg?branch=master)](https://travis-ci.org/hechoendrupal/drupal-console)
-[![Latest Stable Version](https://poser.pugx.org/drupal/console/v/stable.svg)](https://packagist.org/packages/drupal/console)
-[![Latest Unstable Version](https://poser.pugx.org/drupal/console/v/unstable.svg)](https://packagist.org/packages/drupal/console)
-[![Software License](https://img.shields.io/badge/license-GPL%202.0+-blue.svg)](https://packagist.org/packages/drupal/console)
-[![SensioLabsInsight](https://insight.sensiolabs.com/projects/d0f089ff-a6e9-4ba4-b353-cb68173c7d90/mini.png)](https://insight.sensiolabs.com/projects/d0f089ff-a6e9-4ba4-b353-cb68173c7d90)
 
 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.
 
@@ -28,7 +21,7 @@ The Drupal CLI. A tool to generate boilerplate code, interact with and debug Dru
 Details of the latest version can be found on the Drupal Console project page under https://drupalconsole.com/.
 
 ## Releases Page
-All notable changes to this project will be documented in the [releases page](https://github.com/hechoendrupal/DrupalConsole/releases)
+All notable changes to this project will be documented in the [releases page](https://github.com/pinoniq/DrupalConsole/releases)
 
 ## Documentation
 The most up-to-date documentation can be found at [https://drupalconsole.com/docs/](https://drupalconsole.com/docs/).
@@ -36,7 +29,7 @@ The most up-to-date documentation can be found at [https://drupalconsole.com/doc
 More information about using this project at the [official documentation](https://drupalconsole.com/docs/en/using/project).
 
 ## Required PHP Version
-PHP 5.5.9 or higher is required to use the Drupal Console application.
+PHP 7.4 or higher is required to use the Drupal Console application.
 
 ## Download 
 
