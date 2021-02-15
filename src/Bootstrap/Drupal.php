@@ -216,8 +216,7 @@ class Drupal implements DrupalInterface
             $container->get('console.renderer')
                 ->setSkeletonDirs(
                     [
-                        $this->drupalFinder->getComposerRoot().DRUPAL_CONSOLE.'/templates/',
-                        $this->drupalFinder->getComposerRoot().DRUPAL_CONSOLE_CORE.'/templates/'
+                        $this->drupalFinder->getComposerRoot().DRUPAL_CONSOLE.'/templates/'
                     ]
                 );
 
@@ -239,8 +238,7 @@ class Drupal implements DrupalInterface
             $container->get('console.renderer')
                 ->setSkeletonDirs(
                     [
-                        $this->drupalFinder->getComposerRoot().DRUPAL_CONSOLE.'/templates/',
-                        $this->drupalFinder->getComposerRoot().DRUPAL_CONSOLE_CORE.'/templates/'
+                        $this->drupalFinder->getComposerRoot().DRUPAL_CONSOLE.'/templates/'
                     ]
                 );
 

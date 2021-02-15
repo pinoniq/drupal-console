@@ -182,7 +182,7 @@ class ConfigurationManager
         $equivalents = [];
         $drushMappings = Yaml::parse(
             file_get_contents(
-                $this->applicationDirectory . DRUPAL_CONSOLE_CORE . 'config/drush.yml'
+                $this->applicationDirectory . DRUPAL_CONSOLE . 'config/drush.yml'
             )
         );
 
@@ -223,7 +223,7 @@ class ConfigurationManager
 
     public function getVendorCoreDirectory()
     {
-        $consoleCoreDirectory = dirname(dirname(dirname(__FILE__))) . '/config/';
+        $consoleCoreDirectory = dirname(dirname(dirname(dirname(__FILE__)))) . '/config/';
 
         if (is_dir($consoleCoreDirectory)) {
             return $consoleCoreDirectory;

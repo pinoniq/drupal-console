@@ -56,9 +56,9 @@ class DrupalFinder extends DrupalFinderBase
 
     protected function definePaths($vendorDir)
     {
-        $this->consoleCorePath = "/{$vendorDir}/drupal/console-core/";
-        $this->consolePath = "/{$vendorDir}/drupal/console/";
-        $this->consoleLanguagePath = "/{$vendorDir}/drupal/console-%s/translations/";
+        $this->consoleCorePath = "/{$vendorDir}/pinoniq/drupal-console-core/";
+        $this->consolePath = "/{$vendorDir}/pinoniq/drupal-console/";
+        $this->consoleLanguagePath = "/{$vendorDir}/pinoniq/drupal-console-%s/translations/";
     }
 
     protected function defineConstants($vendorDir)
@@ -66,16 +66,16 @@ class DrupalFinder extends DrupalFinderBase
         if (!defined("DRUPAL_CONSOLE_CORE")) {
             define(
                 "DRUPAL_CONSOLE_CORE",
-                "/{$vendorDir}/drupal/console-core/"
+                "/{$vendorDir}/pinoniq/drupal-console/"
             );
         }
         if (!defined("DRUPAL_CONSOLE")) {
-            define("DRUPAL_CONSOLE", "/{$vendorDir}/drupal/console/");
+            define("DRUPAL_CONSOLE", "/{$vendorDir}/pinoniq/drupal-console/");
         }
         if (!defined("DRUPAL_CONSOLE_LANGUAGE")) {
             define(
                 "DRUPAL_CONSOLE_LANGUAGE",
-                "/{$vendorDir}/drupal/console-%s/translations/"
+                "/{$vendorDir}/pinoniq/drupal-console-%s/translations/"
             );
         }
       if (!defined("DRUPAL_CONSOLE_LANGUAGE_INSTALLERS")) {

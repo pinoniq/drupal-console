@@ -64,7 +64,6 @@ class DrupalConsoleCore
         }
 
         $servicesFiles = [
-            $this->root.DRUPAL_CONSOLE_CORE.'services.yml',
             $this->root.'/services.yml',
             $this->root.DRUPAL_CONSOLE.'uninstall.services.yml',
             $this->root.DRUPAL_CONSOLE.'extend.console.uninstall.services.yml'
@@ -116,8 +115,7 @@ class DrupalConsoleCore
         $container->get('console.renderer')
             ->setSkeletonDirs(
                 [
-                    $this->root.'/templates/',
-                    $this->root.DRUPAL_CONSOLE_CORE.'/templates/'
+                    $this->root.'/templates/'
                 ]
             );
 

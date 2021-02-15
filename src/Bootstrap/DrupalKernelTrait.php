@@ -94,7 +94,6 @@ trait DrupalKernelTrait
     {
         $servicesFiles = array_filter(
             [
-                $root. DRUPAL_CONSOLE_CORE . 'services.yml',
                 $root. DRUPAL_CONSOLE . 'uninstall.services.yml',
                 $root. DRUPAL_CONSOLE . 'services.yml'
             ],
