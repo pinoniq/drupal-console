@@ -211,7 +211,7 @@ class ModuleCommand extends Command
             :$this->stringConverter->createMachineName($module);
 
         $description = $input->getOption('description')?:$this->trans('commands.generate.module.suggestions.my-awesome-module');
-        $core = $input->getOption('core')?:'8.x';
+        $core = $input->getOption('core')?:'^8.9.0 || ^9.0';
         $package = $input->getOption('package')?:'Custom';
         $moduleFile = $input->getOption('module-file');
         $featuresBundle = $input->getOption('features-bundle');
@@ -359,7 +359,7 @@ class ModuleCommand extends Command
         $core = $input->getOption('core');
         if (!$core) {
             $core = $this->getIo()->ask(
-                $this->trans('commands.generate.module.questions.core'), '8.x',
+                $this->trans('commands.generate.module.questions.core'), '^8.9.0 || ^9.0',
                 function ($core) {
                     // Only allow 8.x and higher as core version.
                     if (!preg_match('/^([0-9]+)\.x$/', $core, $matches) || ($matches[1] < 8)) {
