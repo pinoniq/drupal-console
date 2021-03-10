@@ -9,6 +9,9 @@ namespace Drupal\{{module}}\Form;
 {% endblock %}
 
 {% block use_class %}
+use Drupal\Component\Datetime\TimeInterface;
+use Drupal\Core\Datetime\DateFormatterInterface;
+use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Form\ConfirmFormBase;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
@@ -27,28 +30,28 @@ class {{ entity_class }}RevisionRevertForm extends ConfirmFormBase {% endblock %
   /**
    * The {{ label }} revision.
    *
-   * @var \Drupal\{{module}}\Entity\{{ entity_class }}Interface
+   * @var {{ entity_class }}Interface
    */
   protected $revision;
 
   /**
    * The {{ label }} storage.
    *
-   * @var \Drupal\Core\Entity\EntityStorageInterface
+   * @var EntityStorageInterface
    */
   protected ${{ entity_class[:1]|lower ~ entity_class[1:] }}Storage;
 
   /**
    * The date formatter service.
    *
-   * @var \Drupal\Core\Datetime\DateFormatterInterface
+   * @var DateFormatterInterface
    */
   protected $dateFormatter;
   
   /**
    * The time service.
    *
-   * @var \Drupal\Component\Datetime\TimeInterface
+   * @var TimeInterface
    */
   protected $time;
 
@@ -104,7 +107,7 @@ class {{ entity_class }}RevisionRevertForm extends ConfirmFormBase {% endblock %
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state, ${{ entity_name }}_revision = NULL) {
-    $this->revision = $this->{{ entity_class }}Storage->loadRevision(${{ entity_name }}_revision);
+    $this->revision = $this->{{ entity_class[:1]|lower ~ entity_class[1:] }}Storage->loadRevision(${{ entity_name }}_revision);
     $form = parent::buildForm($form, $form_state);
 
     return $form;
