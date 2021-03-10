@@ -139,7 +139,7 @@ class {{ entity_class }}Controller extends ControllerBase implements ContainerIn
           ]));
         }
         else {
-          $link = ${{ entity_name }}->toLink($date)->toString();
+          $link = ${{ entity_name }}->toLink($date);
         }
 
         $row = [];
@@ -148,7 +148,7 @@ class {{ entity_class }}Controller extends ControllerBase implements ContainerIn
             '#type' => 'inline_template',
             '#template' => '{{  '{% trans %}{{ date }} by {{ username }}{% endtrans %}{% if message %}<p class="revision-log">{{ message }}</p>{% endif %}' }}',
             '#context' => [
-              'date' => $link,
+              'date' => $link->toString(),
               'username' => $this->renderer->renderPlain($username),
               'message' => [
                 '#markup' => $revision->getRevisionLogMessage(),
