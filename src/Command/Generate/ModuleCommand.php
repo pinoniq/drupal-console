@@ -359,20 +359,7 @@ class ModuleCommand extends Command
         $core = $input->getOption('core');
         if (!$core) {
             $core = $this->getIo()->ask(
-                $this->trans('commands.generate.module.questions.core'), '^8.9.0 || ^9.0',
-                function ($core) {
-                    // Only allow 8.x and higher as core version.
-                    if (!preg_match('/^([0-9]+)\.x$/', $core, $matches) || ($matches[1] < 8)) {
-                        throw new \InvalidArgumentException(
-                            sprintf(
-                                $this->trans('commands.generate.module.errors.invalid-core'),
-                                $core
-                            )
-                        );
-                    }
-
-                    return $core;
-                }
+                $this->trans('commands.generate.module.questions.core'), '^8.9.0 || ^9.0'
             );
             $input->setOption('core', $core);
         }
